@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -781,8 +782,9 @@
             transition: var(--transition-normal);
         }
 
+        /* Updated logo hover effect - changed from rotate to zoom */
         .nav__logo:hover {
-            transform: rotate(360deg) scale(1.1);
+            transform: scale(1.3);
             filter: brightness(0) saturate(100%) invert(70%) sepia(25%) saturate(800%) hue-rotate(75deg);
         }
 
@@ -1599,19 +1601,20 @@
                
                     <div class="portfolio__grid">
                       
-                        <article class="portfolio-card rotate-in stagger-delay-3">
-                            <a href="https://www.youtube.com/watch?v=14wrcHqC2kQ" target="_blank" rel="noopener">
+                         <article class="portfolio-card zoom-in stagger-delay-2">
+                            <a href="https://www.amazon.in/minitv/tp/3a2e28b4-7be0-455a-8b1e-2cfe86c2707c?refMarker=ams_s " target="_blank" rel="noopener">
                                 <div class="portfolio-card__image">
-                                    <img src="/public/portimages/bandit.jpg" alt="One Night" loading="lazy">
+                                    <img src="/public/portimages/jamnapar.jpg" alt="Jamnapaar" loading="lazy">
                                     <div class="portfolio-card__overlay">
                                         <i class="fas fa-play-circle"></i>
                                     </div>
                                 </div>
                             </a>
                             <div class="portfolio-card__content">
-                                <h4 class="portfolio-card__title">One Night (Editor's Cut)</h4>
-                                <p class="portfolio-card__description">A reimagined version focusing on nuanced storytelling through editing.</p>
+                                <h4 class="portfolio-card__title">Jamnapaar</h4>
+                                <p class="portfolio-card__description">A narrative set in the heart of Delhi, delving into the lives of its characters.</p>
                             </div>
+                        </article>
                         </article>
                      <article class="portfolio-card zoom-in stagger-delay-1">
         <a href="https://bulletapp.onelink.me/5IKq/4mplf7ux" target="_blank" rel="noopener">
@@ -1698,12 +1701,51 @@
        <section id="portfolio" class="portfolio section">
             <div class="container">
                 <h2 class="section__title fade-in-down">Our Portfolio</h2>
-                
+                <!-- Web Series Category -->
+                       <div class="portfolio__category">
+                    <h3 class="portfolio__category-title fade-in-left">
+                        <i class="fas fa-cut"></i>
+                        Edit Work
+                    </h3>
+                    <div class="portfolio__grid">
+                        <article class="portfolio-card zoom-in stagger-delay-1">
+                            <a href="https://www.amazon.in/minitv/tp/05f6260e-aa07-498f-bd70-a8f821e9e549?refMarker=ams_s " target="_blank" rel="noopener">
+                                <div class="portfolio-card__image">
+                                    <img src="/public/portimages/Kill-dill.png" alt="Kill-dill" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="portfolio-card__content">
+                                <h4 class="portfolio-card__title">Kill Dill - The Heartbreak Club</h4>
+                                <p class="portfolio-card__description">A web series exploring themes of love and heartbreak.</p>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-card zoom-in stagger-delay-2">
+                            <a href="https://www.amazon.in/minitv/tp/3a2e28b4-7be0-455a-8b1e-2cfe86c2707c?refMarker=ams_s " target="_blank" rel="noopener">
+                                <div class="portfolio-card__image">
+                                    <img src="/public/portimages/jamnapar.jpg" alt="Jamnapaar" loading="lazy">
+                                    <div class="portfolio-card__overlay">
+                                        <i class="fas fa-play-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="portfolio-card__content">
+                                <h4 class="portfolio-card__title">Jamnapaar</h4>
+                                <p class="portfolio-card__description">A narrative set in the heart of Delhi, delving into the lives of its characters.</p>
+                            </div>
+                        </article>
+
+                      
+                    </div>
+                </div>
                 <!-- Film Editing Category -->
                 <div class="portfolio__category">
                     <h3 class="portfolio__category-title fade-in-left">
                         <i class="fas fa-film"></i>
-                        Film Editing
+                        Film $ TV Editing
                     </h3>
                     <div class="portfolio__grid">
                         <article class="portfolio-card rotate-in stagger-delay-1">
@@ -1744,6 +1786,43 @@
                         </article>
                     </div>
                 </div>
+                <h3 class="portfolio__category-title fade-in-left">
+    <i class="fas fa-th"></i>
+    Vertical
+</h3>
+<div class="portfolio__grid">
+    <article class="portfolio-card zoom-in stagger-delay-1">
+        <a href="https://bulletapp.onelink.me/5IKq/4mplf7ux" target="_blank" rel="noopener">
+            <div class="portfolio-card__image">
+                <img src="/public/portimages/romeo.jpg" alt="Project 1" loading="lazy">
+                <div class="portfolio-card__overlay">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+            </div>
+        </a>
+        <div class="portfolio-card__content">
+            <h4 class="portfolio-card__title">Rickshaw Romeo</h4>
+            <p class="portfolio-card__description">Short Drama. Comedy.</p>
+        </div>
+    </article>
+
+    <article class="portfolio-card zoom-in stagger-delay-2">
+        <a href="https://bulletapp.onelink.me/5IKq/mjlu9xfv" target="_blank" rel="noopener">
+            <div class="portfolio-card__image">
+                <img src="public/portimages/laxmi.jpg" alt="Project 2" loading="lazy">
+                <div class="portfolio-card__overlay">
+                    <i class="fas fa-play-circle"></i>
+                </div>S
+            </div>
+        </a>
+        <div class="portfolio-card__content">
+            <h4 class="portfolio-card__title">Laxmi Raj</h4>
+            <p class="portfolio-card__description">Short Drama. Drama.</p>
+        </div>
+    </article>
+
+   
+</div>
 
                 <!-- Edit Work Category -->
                 <div class="portfolio__category">
@@ -1799,43 +1878,7 @@
                     </div>
                 </div>
                 <!-- Replace the last vertical portfolio section with this -->
-<h3 class="portfolio__category-title fade-in-left">
-    <i class="fas fa-th"></i>
-    Vertical
-</h3>
-<div class="portfolio-grid-2x2">
-    <article class="portfolio-card zoom-in stagger-delay-1">
-        <a href="https://bulletapp.onelink.me/5IKq/4mplf7ux" target="_blank" rel="noopener">
-            <div class="portfolio-card__image">
-                <img src="/public/portimages/romeo.jpg" alt="Project 1" loading="lazy">
-                <div class="portfolio-card__overlay">
-                    <i class="fas fa-play-circle"></i>
-                </div>
-            </div>
-        </a>
-        <div class="portfolio-card__content">
-            <h4 class="portfolio-card__title">Rickshaw Romeo</h4>
-            <p class="portfolio-card__description">Short Drama. Comedy.</p>
-        </div>
-    </article>
 
-    <article class="portfolio-card zoom-in stagger-delay-2">
-        <a href="https://bulletapp.onelink.me/5IKq/mjlu9xfv" target="_blank" rel="noopener">
-            <div class="portfolio-card__image">
-                <img src="public/portimages/laxmi.jpg" alt="Project 2" loading="lazy">
-                <div class="portfolio-card__overlay">
-                    <i class="fas fa-play-circle"></i>
-                </div>S
-            </div>
-        </a>
-        <div class="portfolio-card__content">
-            <h4 class="portfolio-card__title">Laxmi Raj</h4>
-            <p class="portfolio-card__description">Short Drama. Drama.</p>
-        </div>
-    </article>
-
-   
-</div>
             </div>
         </section>
 
@@ -1857,21 +1900,21 @@
 
         <!-- Contact Section -->
         <section id="contact" class="contact section">
-            <div class="container">
+           <div class="container">
                 <h2 class="section__title fade-in-down">Let's Connect</h2>
                 <div class="contact__content">
                     <div class="contact__info fade-in-up">
                         <div class="contact__item scale-in stagger-delay-1">
                             <i class="fas fa-envelope"></i>
-                            <p>filmcocoon@gmail.com</p>
+                            <p>filmcocoon25@gmail.com</p>
                         </div>
                         <div class="contact__item scale-in stagger-delay-2">
                             <i class="fas fa-phone"></i>
-                            <p>+91 98765 43210</p>
+                            <p>+91 9033210387</p>
                         </div>
                         <div class="contact__item scale-in stagger-delay-3">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p>Mumbai, Maharashtra, India</p>
+                            <p>Ahemdabad, Gujarat, India</p>
                         </div>
                         <h3 class="contact__subtitle fade-in-up stagger-delay-4">Book a consultation to discuss your project needs</h3>
                         <button class="contact__button btn btn--secondary zoom-in stagger-delay-5" id="schedule-button">
